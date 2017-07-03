@@ -1,7 +1,7 @@
 # Javascript_Tutorial
 
-## About the repository
-This repository have the necessesary for everyone who it's beginning in the world of javascript.
-Important things like ECMAScript 6, Arrays, Objects, Ajax, etcetera.
+## Acerca del Repositorio
+Este repositorio cuenta con lo necesario para todo aquel que va incursionando en el mundo de Javascript por primera vez.
+Tiene contenido relacionado con temas basicos, desde Objetos y Arreglos, hasta temas mas actuales y complejos como ECMAScript 6, Ajax y DOM.
 
 ### MetCoder95 - July 2017
