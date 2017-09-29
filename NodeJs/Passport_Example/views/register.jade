@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  h2.page-header Register
+  p Please use the form below to register and get access to members area
+  
+  br
+  ul.errors
+    if errors
+      each error, i in errors
+        li.alert.alert-danger #{error.msg}
+  
+  form(action='/users/register' method="POST" enctype='multipart/form-data')
+    .form-group
+      label(for='name') Name
+      input.form-control(type='text', name='name' id="name" placeholder='Matt Murdock' autofocus=true)
+    .form-group
+      label(for='username') Username
+      input.form-control(type='text', name='username' id='username' placeholder='Daredevil')
+    .form-group
+      label(for='email') Email
+      input.form-control(type='email', name='email' id='email' placeholder='mail@example.com')
+    .form-group
+      label(for='password') Password
+      input.form-control(type='password', name='password' id='password')
+    .form-group
+      label(for='password_confirmation') Password Confirmation
+      input.form-control(type='password', name='password_confirmation' id='password_confirmation')
+    .form-group
+      label(for='avatar') Avatar
+      input.form-control(type='file', name='avatar' id='avatar')
+    button.btn.btn-primary(type="submit") Register

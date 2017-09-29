@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h2.page-header Log-in
+  p Please use the form below to Log In and get access to members area
+  
+  form(action="/users/login" method="POST")
+    .form-group
+      label(for='email') Email/Username
+      input.form-control(type='text', name='username' placeholder='username' autofocus=true)
+    .form-group
+      label(for='password') Password
+      input.form-control(type='password', name='password')
+    button.btn.btn-primary(type="submit") Log-in
