@@ -1,1 +1,5 @@
+# Ignore npm package
 node_modules
+
+# Ignore target folder for uploaded images
+uploads
