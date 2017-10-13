@@ -12,6 +12,9 @@ const session = require('express-session');
 const express_validator = require('express-validator');
 const flash = require('express-flash-2');
 
+// Getting the root path
+global.__basedir = __dirname;
+
 const mongo = require('mongodb');
 const mongoose = require('mongoose');
 
